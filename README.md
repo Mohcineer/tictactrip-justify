@@ -39,7 +39,7 @@ Authorization: Bearer bW9oY2luZWVyMThAZ21haWwuY29t
 
 Content-Type: text/plain
 
-Body : Texte brut (raw text) à justifier.
+Body : Texte brut à justifier.
 
 💻 Installation et Lancement Local
 1. Cloner le projet
