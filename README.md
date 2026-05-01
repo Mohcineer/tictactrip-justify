@@ -35,7 +35,7 @@ Endpoint : POST /api/justify
 
 Headers :
 
-Authorization: Bearer <votre_token>
+Authorization: Bearer bW9oY2luZWVyMThAZ21haWwuY29t
 
 Content-Type: text/plain
 
