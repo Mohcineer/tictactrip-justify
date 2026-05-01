@@ -29,7 +29,8 @@ L'API est déployée et testable immédiatement ici :
 {
   "email": "votre-email@exemple.com"
 }
-2. Justifier un texte
+
+### 2. Justifier un texte
 Endpoint : POST /api/justify
 
 Headers :
