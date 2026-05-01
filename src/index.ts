@@ -1,5 +1,5 @@
 import express, { type Request, type Response } from 'express';
-import { justifyText } from './services/justify.service.js'; // Note le .js à la fin (requis par NodeNext)
+import { justifyText } from './services/justify.service.js'; 
 
 const app = express();
 const PORT = process.env.PORT || 3000;
