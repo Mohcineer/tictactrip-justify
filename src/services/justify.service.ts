@@ -8,7 +8,7 @@ export function justifyText(text: string, maxLength: number = 80): string {
   let currentLength = 0;
 
   for (const word of words) {
-    // On vérifie si l'ajout du mot dépasse la limite (mot + espaces minimum)
+ 
     if (currentLength + word.length + currentLine.length > maxLength) {
       lines.push(formatLine(currentLine, currentLength, maxLength));
       currentLine = [];
@@ -19,7 +19,7 @@ export function justifyText(text: string, maxLength: number = 80): string {
     currentLength += word.length;
   }
 
-  // Dernière ligne (alignée à gauche seulement)
+
   if (currentLine.length > 0) {
     lines.push(currentLine.join(" "));
   }
@@ -29,9 +29,8 @@ export function justifyText(text: string, maxLength: number = 80): string {
 
 function formatLine(words: string[], length: number, max: number): string {
   const gaps = words.length - 1;
-  const firstWord = words[0] ?? ""; // Sécurité pour TS
+  const firstWord = words[0] ?? ""; 
 
-  // Cas : un seul mot dans la ligne
   if (gaps < 1) {
     return firstWord.padEnd(max, " ");
   }
@@ -43,11 +42,11 @@ function formatLine(words: string[], length: number, max: number): string {
   let result = "";
 
   for (let i = 0; i < words.length; i++) {
-    const word = words[i] ?? ""; // Sécurité pour TS
+    const word = words[i] ?? ""; 
     result += word;
 
     if (i < gaps) {
-      // On ajoute l'espace de base + 1 espace normal + l'éventuel espace bonus (extra)
+  
       const spacesToApply = baseSpace + (i < extraSpaces ? 1 : 0);
       result += " ".repeat(spacesToApply + 1);
     }
