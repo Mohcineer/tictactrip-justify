@@ -27,9 +27,9 @@ L'API est déployée et testable immédiatement ici :
 **Body (JSON) :**
 ```json
 {
-  "email": "votre-email@exemple.com"
+  "email": "mohcineer18@gmail.com"
 }
-
+```
 ### 2. Justifier un texte
 Endpoint : POST /api/justify
 
