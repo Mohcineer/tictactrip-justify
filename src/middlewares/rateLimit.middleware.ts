@@ -1,7 +1,6 @@
 import type { Request, Response, NextFunction } from 'express';
 
-// Simulation d'une base de données en mémoire
-// Dans un vrai projet pro, on utiliserait Redis ou SQLite
+
 const wordCounts = new Map<string, { count: number; date: string }>();
 
 export const rateLimiter = (req: Request, res: Response, next: NextFunction) => {
